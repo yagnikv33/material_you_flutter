@@ -23,8 +23,8 @@ class _MyAppState extends State<MyApp> {
       ColorScheme lightColorScheme;
 
       if (lightDynamic != null && dark != null) {
-        lightColorScheme = lightDynamic.harmonized()..copyWith();
-        lightColorScheme = lightColorScheme.copyWith(secondary: brandColor);
+        lightColorScheme = lightDynamic;
+        lightColorScheme = lightColorScheme;
       } else {
         lightColorScheme = ColorScheme.fromSeed(seedColor: brandColor);
       }
